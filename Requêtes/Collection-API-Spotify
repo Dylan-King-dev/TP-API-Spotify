@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "aa21d8c5-a610-4dfd-a4bd-3cf7fc5054ca",
+		"name": "Spotify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50122813",
+		"_collection_link": "https://universal-star-9868188.postman.co/workspace/Dylan-King's-Workspace~66f72b95-6126-4f3c-8a82-cb9a4726b94a/collection/50122813-aa21d8c5-a610-4dfd-a4bd-3cf7fc5054ca?action=share&source=collection_link&creator=50122813"
+	},
+	"item": [
+		{
+			"name": "Acess Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://accounts.spotify.com/api/token?grant_type=client_credentials&client_id=83ee08a63f2541bfb1a71c287a06ea3d&client_secret=a477a7c2704e4e21ae79330cf5055cec",
+					"protocol": "https",
+					"host": [
+						"accounts",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"api",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials"
+						},
+						{
+							"key": "client_id",
+							"value": "83ee08a63f2541bfb1a71c287a06ea3d"
+						},
+						{
+							"key": "client_secret",
+							"value": "a477a7c2704e4e21ae79330cf5055cec"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Damso",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDGX9NRJlWEzS3KslbrCjhb4eMyV3rb7bzFjVyk61FNRoD000dFdzqGVGkcqVJWYkzTvjMGdQk5gvTYrAZnjqiiHPJAATFX_RTFzdRPejF0QlVmBql8Z3nTrEPmhGz_cNNxoCl1QGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/artists/2UwqpfQtNuhBwviIC0f2ie?si=acQZCoOJQSmQaqPu5kCw9g",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"artists",
+						"2UwqpfQtNuhBwviIC0f2ie"
+					],
+					"query": [
+						{
+							"key": "si",
+							"value": "acQZCoOJQSmQaqPu5kCw9g"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Album Damso",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDGX9NRJlWEzS3KslbrCjhb4eMyV3rb7bzFjVyk61FNRoD000dFdzqGVGkcqVJWYkzTvjMGdQk5gvTYrAZnjqiiHPJAATFX_RTFzdRPejF0QlVmBql8Z3nTrEPmhGz_cNNxoCl1QGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/artists/2UwqpfQtNuhBwviIC0f2ie/albums",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"artists",
+						"2UwqpfQtNuhBwviIC0f2ie",
+						"albums"
+					],
+					"query": [
+						{
+							"key": "si",
+							"value": "B7BKqwFTTKSqKTeaDVGXnQ/albums",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 5 Batterie Faible",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDGX9NRJlWEzS3KslbrCjhb4eMyV3rb7bzFjVyk61FNRoD000dFdzqGVGkcqVJWYkzTvjMGdQk5gvTYrAZnjqiiHPJAATFX_RTFzdRPejF0QlVmBql8Z3nTrEPmhGz_cNNxoCl1QGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/albums/4beTtJKeg3ITJsiVuxkiV0/tracks?limit=5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"albums",
+						"4beTtJKeg3ITJsiVuxkiV0",
+						"tracks"
+					],
+					"query": [
+						{
+							"key": "si",
+							"value": "zPuV_vRNR1KseNeFhKjyPA/tracks/limit=5",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Impardonnable",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDGX9NRJlWEzS3KslbrCjhb4eMyV3rb7bzFjVyk61FNRoD000dFdzqGVGkcqVJWYkzTvjMGdQk5gvTYrAZnjqiiHPJAATFX_RTFzdRPejF0QlVmBql8Z3nTrEPmhGz_cNNxoCl1QGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/tracks/6nkFbmDY84a9rejFSbIMdj",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"tracks",
+						"6nkFbmDY84a9rejFSbIMdj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Popular Laylow",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDGX9NRJlWEzS3KslbrCjhb4eMyV3rb7bzFjVyk61FNRoD000dFdzqGVGkcqVJWYkzTvjMGdQk5gvTYrAZnjqiiHPJAATFX_RTFzdRPejF0QlVmBql8Z3nTrEPmhGz_cNNxoCl1QGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/artists/0LnhY2fzptb0QEs5Q5gM7S/top-tracks",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"artists",
+						"0LnhY2fzptb0QEs5Q5gM7S",
+						"top-tracks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Laylow Maladresse",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDGX9NRJlWEzS3KslbrCjhb4eMyV3rb7bzFjVyk61FNRoD000dFdzqGVGkcqVJWYkzTvjMGdQk5gvTYrAZnjqiiHPJAATFX_RTFzdRPejF0QlVmBql8Z3nTrEPmhGz_cNNxoCl1QGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/tracks/67Pf31pl0PfjBfUmvYNDCL",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"tracks",
+						"67Pf31pl0PfjBfUmvYNDCL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Podcast",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDGX9NRJlWEzS3KslbrCjhb4eMyV3rb7bzFjVyk61FNRoD000dFdzqGVGkcqVJWYkzTvjMGdQk5gvTYrAZnjqiiHPJAATFX_RTFzdRPejF0QlVmBql8Z3nTrEPmhGz_cNNxoCl1QGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/shows/6y1PloEyNsCNJH9vHias4T",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"shows",
+						"6y1PloEyNsCNJH9vHias4T"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dernier Eps Podcast",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDGX9NRJlWEzS3KslbrCjhb4eMyV3rb7bzFjVyk61FNRoD000dFdzqGVGkcqVJWYkzTvjMGdQk5gvTYrAZnjqiiHPJAATFX_RTFzdRPejF0QlVmBql8Z3nTrEPmhGz_cNNxoCl1QGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/shows/6y1PloEyNsCNJH9vHias4T/episodes?limit=3",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"shows",
+						"6y1PloEyNsCNJH9vHias4T",
+						"episodes"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Avant dernier ep Podcast",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDGX9NRJlWEzS3KslbrCjhb4eMyV3rb7bzFjVyk61FNRoD000dFdzqGVGkcqVJWYkzTvjMGdQk5gvTYrAZnjqiiHPJAATFX_RTFzdRPejF0QlVmBql8Z3nTrEPmhGz_cNNxoCl1QGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/shows/6y1PloEyNsCNJH9vHias4T/episodes?offset=1&limit=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"shows",
+						"6y1PloEyNsCNJH9vHias4T",
+						"episodes"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
