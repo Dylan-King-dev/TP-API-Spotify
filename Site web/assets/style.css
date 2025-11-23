@@ -1,51 +1,124 @@
+/* Base */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
-    padding: 40px;
-    background: #f5f5f5;
-    color: #333;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Header */
+header {
     text-align: center;
+    padding: 40px 20px 20px 20px;
 }
 
-h1 {
-    margin-bottom: 40px;
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #1db954;
 }
 
-.gallery {
+header h2 {
+    font-size: 1.2rem;
+    margin: 5px 0 0 0;
+    color: #b3b3b3;
+}
+
+/* Album list (Damso) */
+.album-list {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 15px;
 }
 
-.gallery a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.gallery img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
+.album-card {
+    display: flex;
+    align-items: center;
+    background-color: #181818;
+    padding: 12px 15px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+.album-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
 }
 
-.gallery p {
-    margin-top: 10px;
+.album-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+    border: 1px solid #1db954;
+}
+
+.album-info h2 {
+    margin: 0 0 5px 0;
     font-size: 1.1rem;
+    color: #1db954;
+}
+
+.album-info p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+/* Single track card (Laylow) */
+.track-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #181818;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.track-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #1db954;
+    margin-bottom: 20px;
+}
+
+.track-info p {
+    font-size: 0.95rem;
+    margin: 5px 0;
+    color: #b3b3b3;
+}
+
+.track-info a {
+    color: #1db954;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.track-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Back Link */
+footer {
+    text-align: center;
+    margin: 30px 0;
 }
 
 .back {
-    display: inline-block;
-    margin-top: 20px;
-    color: #0066cc;
-    font-size: 1.1rem;
+    color: #1db954;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .back:hover {

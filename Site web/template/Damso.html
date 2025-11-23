@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damso — Albums</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Damso — Albums</h1>
+    </header>
+
+    <main class="album-list">
+        {{ range .Items }}
+        <div class="album-card">
+            <img src="{{ (index .Images 0).URL }}" alt="{{ .Name }}">
+            <div class="album-info">
+                <h2>{{ .Name }}</h2>
+                <p><strong>Date de Sortie:</strong> {{ .ReleaseDate }}</p>
+                <p><strong>Nombre de Musiques:</strong> {{ .TotalTracks }}</p>
+            </div>
+        </div>
+        {{ end }}
+    </main>
+
+    <footer>
+        <a class="back" href="/">← Retour</a>
+    </footer>
+
+</body>
+
+</html>

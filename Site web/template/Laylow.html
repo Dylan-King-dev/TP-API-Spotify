@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Name }} — Laylow</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>{{ .Name }}</h1>
+        <h2>{{ .Album.Name }}</h2>
+    </header>
+
+    <main class="track-card">
+        <img src="{{ (index .Album.Images 0).URL }}" alt="{{ .Album.Name }}">
+        <div class="track-info">
+            <p><strong>Date de Sortie:</strong> {{ .Album.ReleaseDate }}</p>
+            <p><strong>Artistes:</strong> {{ range .Artists }}{{ .Name }} {{ end }}</p>
+            <p><strong>Durée:</strong> {{ .Duration }} minutes</p>
+            <p><a href="{{ .ExternalURLs.Spotify }}" target="_blank">Lien vers Spotify</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <a class="back" href="/">← Retour</a>
+    </footer>
+
+</body>
+
+</html>

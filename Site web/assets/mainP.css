@@ -1,0 +1,64 @@
+/* Body & background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #1db954, #121212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Landing container */
+.landing-container {
+    text-align: center;
+}
+
+/* Heading */
+.landing-container h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Gallery layout */
+.artist-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Artist cards */
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 2px solid #1db954;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects */
+.artist-card:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Artist name below image */
+.artist-card span {
+    margin-top: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+}
